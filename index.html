@@ -3,129 +3,178 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп "Бородинский"</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/logo-borodinskii.png" width="371" height="155" alt="Логотип Бабершоп 'Бородинский'">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="pricelist.html">Прайс-лист</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="user-navigation">
           <li>
-            <button type="button">Вход</button>
+            <a class="login-link" href="">Вход</a>
           </li>
         </ul>
       </nav>
     </header>
     
-    <main>
-      <h1>Барбершоп "Бородинский"</h1>
-      <section>
-        <h2>Преимущества</h2>
-        <ul>
-          <li>
+    <main class="container">
+      <h1 class="visually-hidden">Барбершоп "Бородинский"</h1>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ul class="features-list">
+          <li class="features-item">
             <h3>Быстро</h3>
             <p>мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Круто</h3>
             <p>Забудьте, как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Дорого</h3>
             <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
           </li>
         </ul>
       </section>
       
-      <section>
-        <h2>Новости</h2>
-        <ul>
-          <li>
-            <p>Нам наконец завезли Ягермастер! Теперь Вы можете пропустить стаканчик во время стрижки</p>
-            <time datetime="2020-01-11">11 января</time>
-          </li>
-          <li>
-            <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-            <time datetime="2020-01-18">18 января</time>
-          </li>
-        </ul>
-        <a href="">Все новости</a>
-      </section>
+      <div class="index-columns">
+        <section class="news">
+          <h2>Новости</h2>
+          <ul class="news-list">
+            <li class="news-item">
+              <p>Нам наконец завезли Ягермастер! Теперь Вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime="2020-01-11">11 января</time>
+            </li>
+            <li class="news-item">
+              <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime="2020-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="button" href="">Все новости</a>
+        </section>
+
+        <section class="gallery">
+          <h2>Фотогалерея</h2>
+          <figure class="gallery-content">
+            <a href="">
+              <img src="img/img-gallery.jpg" width="286" height="164" alt="Интерьер">
+            </a>
+          </figure>
+          <button class="button gallery-button gallery-button-back" type="button">Назад</button>
+          <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+        </section>
+      </div>
       
-      <section>
-        <h2>Фотогалерея</h2>
-        <figure>
-          <a href="">
-            <img src="img/img-galery.jpg" width="286" height="164" alt="Интерьер">
-          </a>
-        </figure>
-        <button type="button">Назад</button>
-        <button type="button">Вперед</button>
-      </section>
-      
-      <section>
-        <h2>Контактная информация</h2>
-        <p>
-          Барбершоп "Бородинский"<br>
-          Адрес: г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
-          Телефон: <a href="tel:74956660266">+7 (495) 666-02-66</a>
-        </p>
-        <p>
-          Время работы:<br>
-          Пн-Пт: с 10-00 до 22-00<br>
-          Сб-Вс: с 10-00 до 19-00
-        </p>
-        <button type="button">Как проехать</button>
-        <a href="">Обратная связь</a>
-      </section>
-      
-      <section>
-        <h2>Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
-        <!-- Далее будет форма записи -->
-      </section>
+      <div class="index-columns">
+        <section class="contacts">
+          <h2>Контактная информация</h2>
+          <p>
+            Барбершоп "Бородинский"<br>
+            Адрес: г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
+            Телефон: <a href="tel:74956660266">+7 (495) 666-02-66</a>
+          </p>
+          <p>
+            Время работы:<br>
+            Пн-Пт: с 10-00 до 22-00<br>
+            Сб-Вс: с 10-00 до 19-00
+          </p>
+          <a class="button" href="">Как проехать</a>
+          <a class="button" href="">Обратная связь</a>
+        </section>
+
+        <section class="appointment">
+          <h2>Записаться</h2>
+          <p class="appointmen-info">Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
+          <form class="appointment-form">
+            <p class="appointment-item">
+              <label for="customer-date-field">Дата</label>
+              <input type="date" name="customer-date" id="customer-date-field" value="2017-10-08">
+            </p>
+
+            <p class="appointment-item">
+              <label for="customer-time-field">Время</label>
+              <input type="time" name="castomer-time" id="customer-time" value="10:00">
+            </p>
+
+            <p class="appointment-item">
+              <label for="customer-name-field">Ваше имя</label>
+              <input type="text" name="customer-name" id="customer-name-field" placeholder="Борода">
+            </p>
+
+            <p class="appointment-item">
+              <label for="customer-tel-field">Телефон</label>
+              <input type="tel" name="customer-tel" id="customer-tel-field" placeholder="+7 123 456-78-90">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
     </main>
     
     
-    <footer>
-      <p>
+    <footer class="main-footer">
+      <p class="footer-contacts">
         Барбершоп "Бородинский"<br>
         Адрес: г.Санкт-Петербург, Б.Конюшенная, д.19/8<br>
         <a href="">Как нас найти?</a><br>
         Телефон: <a href="tel:74956660266">+7 (495) 666-02-66</a>
       </p>
-      <div>
+      <div class="footer-social">
         <p>Давайте дружить!</p>
         <ul>
-          <li><a href="" area-label="Вконтакте"></a></li>
-          <li><a href="" area-label="Фейсбук"></a></li>
-          <li><a href="" area-label="Инстаграм"></a></li>
+          <li><a class="social-button" href="" area-label="Вконтакте"></a></li>
+          <li><a class="social-button" href="" area-label="Фейсбук"></a></li>
+          <li><a class="social-button" href="" area-label="Инстаграм"></a></li>
         </ul>
       </div>
-      <p>
+      <p class="footer-copyright">
         Разработано:
         <a href="https://htmlacademy.ru">HTMLAcademy</a>
       </p>
     </footer>
     
-    <section>
+    <section class="modal modal-login">
       <h2>Личный кабинет</h2>
       <p>Введите, пожалуйста, свой логин и пароль</p>
-      <!-- Здесь будет форма входа -->
-      <button type="button">Закрыть</button>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" id="user-login-field">Логин</label>
+          <input class="login-icon-user" type="email" name="user-login" id="user-login-field" placeholder="email@example.com">
+        </p>
+        
+        <p>
+          <label class="visually-hidden" id="user-pass-field">Пароль</label>
+          <input class="login-icon-password" type="password" name="user-pass" id="user-pass-field" placeholder="•••••">
+        </p>
+        
+        <p class="login-password-info">
+          <label class="login-checkbox">
+            <input class="visually-hidden" type="checkbox" name="remember">
+            <span class="checkbox-indicator"></span>
+            Запомните меня
+          </label>
+          <a class="restore" href="">Я забыл пароль</a>
+        </p>
+        
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
     
-    <section>
-      <h2>Как до нас добраться?</h2>
-      <button type="button" area-label="">Закрыть</button>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться?</h2>
+      <button class="modal-close" type="button" area-label="">Закрыть</button>
     </section>
   </body>
 </html>
